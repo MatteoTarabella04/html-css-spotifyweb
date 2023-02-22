@@ -71,6 +71,12 @@ a {
     background-color: blue;
 }
 
+.debug #app_footer div {
+    border: 1px dashed white;
+    width: 300px;
+    height: 100%;
+}
+
 
 /* #endregion DEBUG */
 
@@ -198,6 +204,9 @@ a {
 .bottom {
     height: 80px;
     background-color: var(--sp-bg-foot);
+
+    justify-content: space-between;
+    align-items: center;
 }
 
 
