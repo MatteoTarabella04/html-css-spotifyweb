@@ -8,7 +8,7 @@
     --sp-side-txt: rgba(163, 163, 163, 1);
     --sp-white: rgba(255, 255, 255, 1);
     --sp-geen: rgba(173, 255, 47, 1);
-    --sp-font: font-family: 'Roboto', sans-serif;
+    --sp-font: 'Roboto', sans-serif;
 
 }
 
@@ -30,6 +30,10 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* #endregion COMMON */
 
 /* #region DEBUG */
@@ -46,6 +50,15 @@ img {
     background-color: gainsboro;
 }
 
+.debug #top_menu {
+    border: 1px dashed white;
+}
+
+.debug #top_menu li {
+    background-color: var(--sp-side-txt);
+}
+
+
 /* #endregion DEBUG */
 
 /* #region UTILITIES */
@@ -56,6 +69,10 @@ img {
 
 .dir_col {
     flex-direction: column;
+}
+
+.unstyle_list {
+    list-style: none;
 }
 
 /* #endregion UTILITIES */
@@ -81,6 +98,36 @@ img {
     height: 90px;
 }
 
+.banner {
+    height: 85px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn_upgrade {
+    background-color: var(--sp-black);
+    color: var(--sp-white);
+    border: 1.5px solid var(--sp-white);
+    padding: 0.5rem 4rem;
+    border-radius: 20px;
+    margin: 0 0.5rem;
+
+}
+
+#top_menu a {
+    color: var(--sp-side-txt);
+}
+
+#top_menu .unstyle_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    font-size: 12px;
+    font-weight: 400;
+}
 
 /* #endregion TOP */
 
@@ -101,6 +148,10 @@ img {
     .sidebar {
         width: 200px;
     }
+
+    .content {
+        width: calc(100% - 200px);
+    }
 }
 
 @media screen and (max-width: 878px) {
@@ -114,6 +165,10 @@ img {
     .sidebar {
         width: 175px;
     }
+
+    .content {
+        width: calc(100% - 175px);
+    }
     
 }
 
@@ -121,6 +176,10 @@ img {
 
     .sidebar {
         width: 55px;
+    }
+
+    .content {
+        width: calc(100% - 55px);
     }
     
 }
