@@ -62,6 +62,15 @@ a {
     background-color: palegoldenrod;
 }
 
+.debug .card {
+    background-color: green;
+}
+
+.debug .album,
+.debug .artist {
+    background-color: blue;
+}
+
 
 /* #endregion DEBUG */
 
@@ -83,14 +92,6 @@ a {
 }
 
 /* /FLEX */
-
-/* COLUMN */
-
-.col_6 {
-    width: calc(100% / 12 * 6);
-}
-
-/* /COLUMN */
 
 .unstyle_list {
     list-style: none;
@@ -162,6 +163,34 @@ a {
     overflow-y: auto;
 }
 
+#main h2 {
+    padding: 1rem 1.3rem;
+    width: 100%;
+}
+
+#main p {
+    padding: 0 1.3rem;
+    width: 100%;
+}
+
+.card {
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.album {
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+
+.artist {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
 /* #endregion TOP */
 
 /* #region BOTTOM */
@@ -185,12 +214,16 @@ a {
     .content {
         width: calc(100% - 200px);
     }
+
+    .col_2 {
+        width: calc(100% / 12 * 2);
+    }
 }
 
 @media screen and (max-width: 878px) {
 
-    .col_3 {
-        width: calc(100% / 12 * 3);
+    .col_4 {
+        width: calc(100% / 12 * 4);
     }
     
 }
@@ -204,6 +237,10 @@ a {
     .content {
         width: calc(100% - 175px);
     }
+
+    .col_6 {
+        width: calc(100% / 12 * 6);
+    }
     
 }
 
@@ -215,6 +252,10 @@ a {
 
     .content {
         width: calc(100% - 55px);
+    }
+
+    .col_6 {
+        width: calc(100% / 12 * 6);
     }
     
 }
