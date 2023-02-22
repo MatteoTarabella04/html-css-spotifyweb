@@ -157,6 +157,7 @@ a {
 .user_desc {
     color: var(--sp-white);
     font-size: 12px;
+    padding-top: 0.5rem;
 }
 
 .user {
