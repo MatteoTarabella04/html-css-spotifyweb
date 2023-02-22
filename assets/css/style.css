@@ -25,3 +25,107 @@
 body{
     font-family: var(--sp-font);
 }
+
+img {
+    max-width: 100%;
+}
+
+/* #endregion COMMON */
+
+/* #region DEBUG */
+
+.debug .side_bottom {
+    background-color: var(--sp-geen);
+}
+
+.debug .side_top {
+    background-color: red;
+}
+
+.debug .banner {
+    background-color: gainsboro;
+}
+
+/* #endregion DEBUG */
+
+/* #region UTILITIES */
+
+.flex {
+    display: flex;
+}
+
+.dir_col {
+    flex-direction: column;
+}
+
+/* #endregion UTILITIES */
+
+/* #region TOP */
+
+.top {
+    height: calc( 100vh - 80px);
+    background-color: var(--sp-bg-content);
+}
+
+.sidebar {
+    width: 55px;
+    background-color: var(--sp-black);
+}
+
+.side_top {
+    height: calc( 100% - 90px);
+    margin-bottom: 2rem;
+}
+
+.side_bottom {
+    height: 90px;
+}
+
+
+/* #endregion TOP */
+
+/* #region BOTTOM */
+
+.bottom {
+    height: 80px;
+    background-color: var(--sp-bg-foot);
+}
+
+
+/* #endregion BOTTOM */
+
+/* #region RESPONSIVE */
+
+@media screen and (max-width: 1440px) {
+    
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 878px) {
+
+
+    
+}
+
+@media screen and (max-width: 639px) {
+
+    .sidebar {
+        width: 175px;
+    }
+    
+}
+
+@media screen and (max-width: 552px) {
+
+    .sidebar {
+        width: 55px;
+    }
+    
+}
+
+
+
+
+/* #endregion RESPONSIVE */
