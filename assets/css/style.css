@@ -1,0 +1,27 @@
+/* ROOT */
+
+:root {
+    --sp-black: rgba(0, 0, 0, 1);
+    --sp-bg-content: rgba(20, 25, 34, 1);
+    --sp-user: rgba(128, 128, 128, 1);
+    --sp-bg-foot: rgba(40, 40, 40, 1);
+    --sp-side-txt: rgba(163, 163, 163, 1);
+    --sp-white: rgba(255, 255, 255, 1);
+    --sp-geen: rgba(173, 255, 47, 1);
+    --sp-font: font-family: 'Roboto', sans-serif;
+
+}
+
+/* /ROOT */
+
+/* #region COMMON */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--sp-font);
+}
