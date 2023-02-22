@@ -2,6 +2,7 @@
 
 :root {
     --sp-black: rgba(0, 0, 0, 1);
+    --sp-black-op: rgba(0, 0, 0, 0.350);
     --sp-bg-content: rgba(20, 25, 34, 1);
     --sp-user: rgba(128, 128, 128, 1);
     --sp-bg-foot: rgba(40, 40, 40, 1);
@@ -27,7 +28,7 @@ body{
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 a {
@@ -107,6 +108,8 @@ a {
 
 /* #region TOP */
 
+/* SIDEBAR */
+
 .top {
     height: calc( 100vh - 80px);
     background-color: var(--sp-bg-content);
@@ -115,6 +118,10 @@ a {
 .sidebar {
     width: 55px;
     background-color: var(--sp-black);
+
+    align-items: center;
+
+    padding: 0.5rem;
 }
 
 .side_top {
@@ -122,23 +129,45 @@ a {
     margin-bottom: 2rem;
 }
 
+.side_buttons img {
+    padding: 0.5rem;
+}
+
+[class^='logo_']{
+    margin-bottom: 1rem;
+}
+
+.menu_desc {
+    color: var(--sp-white);
+    font-size: 12px;
+}
+
 .side_bottom {
     height: 90px;
 }
+
+/* /SIDEBAR */
 
 .banner {
     height: 85px;
     justify-content: flex-end;
     align-items: center;
+
+    background-color: var(--sp-black-op);
 }
 
 .btn_upgrade {
     background-color: var(--sp-black);
     color: var(--sp-white);
+
     border: 1.5px solid var(--sp-white);
-    padding: 0.5rem 4rem;
     border-radius: 20px;
+
+    padding: 0.5rem 4rem;
     margin: 0 0.5rem;
+
+    font-size: 11px;
+    font-weight: 400;
 
 }
 
@@ -227,12 +256,48 @@ a {
     .col_2 {
         width: calc(100% / 12 * 2);
     }
+
+    .side_buttons .logo_s {
+        display: none;
+    }
+    
+    .side_buttons .logo_lg {
+        display: block;
+        width: 80%;
+    }
+
+    .side_nav_lg {
+        width: 25%;
+    }
+
+    .menu_desc {
+        display: inline-block;
+        vertical-align: 15px;
+    }
 }
 
 @media screen and (max-width: 878px) {
 
     .col_4 {
         width: calc(100% / 12 * 4);
+    }
+
+    .side_buttons .logo_s {
+        display: none;
+    }
+    
+    .side_buttons .logo_lg {
+        display: block;
+        width: 80%;
+    }
+
+    .side_nav_lg {
+        width: 25%;
+    }
+
+    .menu_desc {
+        display: inline-block;
+        vertical-align: 15px;
     }
     
 }
@@ -250,6 +315,24 @@ a {
     .col_6 {
         width: calc(100% / 12 * 6);
     }
+
+    .side_buttons .logo_s {
+        display: none;
+    }
+    
+    .side_buttons .logo_lg {
+        display: block;
+        width: 80%;
+    }
+
+    .side_nav_lg {
+        width: 25%;
+    }
+
+    .menu_desc {
+        display: inline-block;
+        vertical-align: 10px;
+    }
     
 }
 
@@ -265,6 +348,22 @@ a {
 
     .col_6 {
         width: calc(100% / 12 * 6);
+    }
+    
+    .side_buttons .logo_s {
+        display: block;
+    }
+
+    .side_buttons .logo_lg {
+        display: none;
+    }
+
+    .side_nav_lg {
+        width: 100%;
+    }
+
+    .menu_desc {
+        display: none;
     }
     
 }
