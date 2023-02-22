@@ -58,10 +58,16 @@ a {
     background-color: var(--sp-side-txt);
 }
 
+.debug #main {
+    background-color: palegoldenrod;
+}
+
 
 /* #endregion DEBUG */
 
 /* #region UTILITIES */
+
+/* FLEX */
 
 .flex {
     display: flex;
@@ -70,6 +76,21 @@ a {
 .dir_col {
     flex-direction: column;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* /FLEX */
+
+/* COLUMN */
+
+.col_6 {
+    width: calc(100% / 12 * 6);
+}
+
+/* /COLUMN */
 
 .unstyle_list {
     list-style: none;
@@ -114,6 +135,10 @@ a {
 
 }
 
+#top_menu {
+    margin-bottom: 1rem;
+}
+
 #top_menu a {
     color: var(--sp-side-txt);
 }
@@ -127,6 +152,14 @@ a {
 
     font-size: 12px;
     font-weight: 400;
+}
+
+#main {
+    width: 95%;
+    height: calc(100vh - 230px);
+    margin: auto;
+
+    overflow-y: auto;
 }
 
 /* #endregion TOP */
@@ -156,7 +189,9 @@ a {
 
 @media screen and (max-width: 878px) {
 
-
+    .col_3 {
+        width: calc(100% / 12 * 3);
+    }
     
 }
 
