@@ -117,6 +117,7 @@ a {
 
 .sidebar {
     width: 55px;
+    
     background-color: var(--sp-black);
 
     align-items: center;
@@ -125,7 +126,7 @@ a {
 }
 
 .side_top {
-    height: calc( 100% - 90px);
+    height: calc( 100% - 100px);
     margin-bottom: 2rem;
 }
 
@@ -138,13 +139,51 @@ a {
 }
 
 .menu_desc {
+    color: var(--sp-side-txt);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.side_bottom {
+    height: 100px;
+}
+
+.down_desc {
+    color: var(--sp-side-txt);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.user_desc {
     color: var(--sp-white);
     font-size: 12px;
 }
 
-.side_bottom {
-    height: 90px;
+.user {
+    background-color: var(--sp-user);
+    background-image: url('/assets/img/profile.svg');
+    background-size: cover;
+
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+
+    margin-top: 0.5rem;
 }
+
+.profile {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.usr_d {
+    padding: 0 1rem;
+}
+
+/* .profile_s {
+    width: 100%;
+} */
 
 /* /SIDEBAR */
 
@@ -274,6 +313,33 @@ a {
         display: inline-block;
         vertical-align: 15px;
     }
+
+    .down_desc {
+        display: inline-block;
+        vertical-align: 12px;
+    }
+
+    .download_lg {
+        width: 10%;
+        margin: 0.5rem;
+    }
+
+    .side_bottom hr {
+        border: none;
+        height: 1px;
+        margin: 4px 0;
+        background-color: var(--sp-side-txt);
+    }
+
+    .user {
+        width: 18%;
+    }
+
+    .user_desc {
+        display: block;
+        font-size: 15px;
+    }
+    
 }
 
 @media screen and (max-width: 878px) {
@@ -298,6 +364,32 @@ a {
     .menu_desc {
         display: inline-block;
         vertical-align: 15px;
+    }
+
+    .down_desc {
+        display: inline-block;
+        vertical-align: 12px;
+    }
+
+    .download_lg {
+        width: 10%;
+        margin: 0.5rem;
+    }
+
+    .side_bottom hr {
+        border: none;
+        height: 1px;
+        margin: 4px 0;
+        background-color: var(--sp-side-txt);
+    }
+
+    .user {
+        width: 18%;
+    }
+
+    .user_desc {
+        display: block;
+        font-size: 15px;
     }
     
 }
@@ -333,6 +425,32 @@ a {
         display: inline-block;
         vertical-align: 10px;
     }
+
+    .down_desc {
+        display: inline-block;
+        vertical-align: 12px;
+    }
+
+    .download_lg {
+        width: 10%;
+        margin: 0.5rem;
+    }
+
+    .side_bottom hr {
+        border: none;
+        height: 1px;
+        margin: 4px 0;
+        background-color: var(--sp-side-txt);
+    }
+
+    .user {
+        width: 18%;
+    }
+
+    .user_desc {
+        display: block;
+        font-size: 15px;
+    }
     
 }
 
@@ -363,6 +481,32 @@ a {
     }
 
     .menu_desc {
+        display: none;
+    }
+
+    .download_s {
+        width: 50%;
+        margin: 0.5rem;
+    }
+
+    .down_desc {
+        display: none;
+        
+    }
+
+    .side_bottom hr {
+        display: none;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .user {
+        width: 100%;
+    }
+
+    .user_desc {
         display: none;
     }
     
