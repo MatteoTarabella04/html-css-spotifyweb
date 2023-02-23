@@ -35,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* #endregion COMMON */
 
 /* #region DEBUG */
@@ -355,6 +359,8 @@ footer {
     top: 0;
     left: 0;
     z-index: 10000000;
+
+    width: 100%;
 }
 
 .bottom {
@@ -398,7 +404,9 @@ footer {
     align-items: center;
 
     margin-left: 0.5rem;
+}
 
+.icon_foot_left a {
     color: var(--sp-side-txt);
 }
 
@@ -410,7 +418,9 @@ footer {
 .foot_center {
     gap: 0.5rem;
 
-    width: 50%;
+    width: 40%;
+
+    margin: 0 1rem;
 }
 
 .player {
@@ -453,9 +463,30 @@ footer {
     background-color: var(--sp-white);
 }
 
-/* .foot_center {
-    flex-grow: 1;
-} */
+.foot_right {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bar_vol {
+    width: 95px;
+    height: 4px;
+    margin: 0 0.5rem;
+
+    border-radius: 2px;
+
+    background-color: var(--sp-user);
+}
+
+.vol_level {
+    width: 60px;
+    height: 4px;
+
+    border-radius: 2px;
+
+    background-color: var(--sp-white);
+}
 
 
 /* #endregion BOTTOM */
