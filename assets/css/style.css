@@ -388,7 +388,7 @@ footer {
         width: calc(100% - 200px);
     }
 
-    .col_2 {
+    .col_2_lg {
         width: calc(100% / 12 * 2);
     }
 
@@ -449,7 +449,7 @@ footer {
         width: 100%;
     }
 
-    .col_4 {
+    .col_4_md {
         width: calc(100% / 12 * 4);
     }
 
@@ -518,7 +518,7 @@ footer {
         width: calc(100% - 175px);
     }
 
-    .col_6 {
+    .col_6_s_xs {
         width: calc(100% / 12 * 6);
     }
 
@@ -586,7 +586,7 @@ footer {
         width: calc(100% - 55px);
     }
 
-    .col_6 {
+    .col_6_s_xs {
         width: calc(100% / 12 * 6);
     }
     
