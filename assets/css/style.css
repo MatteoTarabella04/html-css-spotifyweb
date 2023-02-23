@@ -407,8 +407,15 @@ footer {
     font-size: small;
 }
 
+.foot_center {
+    gap: 0.5rem;
+
+    width: 50%;
+}
+
 .player {
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -416,6 +423,34 @@ footer {
     border: none;
     background-color: var(--sp-bg-foot);
     color: var(--sp-white);
+}
+
+.duration_bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time {
+    color: var(--sp-white);
+
+    margin: 0 0.3rem;
+
+    font-size: 8px;
+}
+
+.bar {
+    width: 90%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--sp-user);
+}
+
+.bar_status {
+    width: 30%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--sp-white);
 }
 
 /* .foot_center {
