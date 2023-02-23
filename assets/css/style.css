@@ -96,6 +96,7 @@ a {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -1rem;
 }
 
 /* /FLEX */
@@ -265,18 +266,19 @@ a {
     justify-content: center;
     gap: 1.5rem;
 
-    padding: 1rem;
+    padding: 1rem 2rem;
 
     font-size: 12px;
     font-weight: 400;
-
 }
 
 /* /TOP MENU */
 
+/* MAIN */
+
 #main {
     width: 95%;
-    height: calc(100vh - 230px);
+    height: calc(100vh - 260px);
     margin: auto;
 
     overflow-y: auto;
@@ -285,34 +287,75 @@ a {
 #main h2 {
     padding: 1rem 1.3rem;
     width: 100%;
+    color: var(--sp-white);
 }
 
 #main p {
     padding: 0 1.3rem;
     width: 100%;
+    color: var(--sp-side-txt);
+    font-size: 12px;
+    margin-bottom: 2rem;
 }
 
 .card {
-    height: 100%;
+    min-height: 100%;
     padding: 0.5rem;
     display: flex;
     justify-content: center;
 }
 
 .album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 200px;
     aspect-ratio: 1/1;
 }
 
+.title {
+    color: var(--sp-white);
+
+    font-size: 15px;
+    text-align: center;
+
+    padding: 0.5rem 0;
+
+    display: block;
+}
+
+.sub {
+    color: var(--sp-side-txt);
+
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+
+    display: block;
+}
+
 .artist {
-    width: 200px;
-    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art {
+    width: 70%;
     border-radius: 50%;
 }
 
 /* #endregion TOP */
 
 /* #region BOTTOM */
+
+footer {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+}
 
 .bottom {
     height: 80px;
@@ -328,6 +371,14 @@ a {
 /* #region RESPONSIVE */
 
 @media screen and (max-width: 1440px) {
+
+    img {
+        width: 80%;
+    }
+
+    #main {
+        overflow-x: hidden;
+    }
     
     .sidebar {
         width: 200px;
@@ -394,6 +445,10 @@ a {
 
 @media screen and (max-width: 878px) {
 
+    img {
+        width: 100%;
+    }
+
     .col_4 {
         width: calc(100% / 12 * 4);
     }
@@ -450,6 +505,10 @@ a {
 }
 
 @media screen and (max-width: 639px) {
+
+    img {
+        width: 100%;
+    }
 
     .sidebar {
         width: 175px;
@@ -514,6 +573,10 @@ a {
 }
 
 @media screen and (max-width: 552px) {
+
+    img {
+        width: 100%;
+    }
 
     .sidebar {
         width: 55px;
