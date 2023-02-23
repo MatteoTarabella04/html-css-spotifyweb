@@ -407,6 +407,21 @@ footer {
     font-size: small;
 }
 
+.player {
+    align-items: center;
+    gap: 1rem;
+}
+
+.player_btn {
+    border: none;
+    background-color: var(--sp-bg-foot);
+    color: var(--sp-white);
+}
+
+/* .foot_center {
+    flex-grow: 1;
+} */
+
 
 /* #endregion BOTTOM */
 
