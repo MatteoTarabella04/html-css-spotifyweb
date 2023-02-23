@@ -223,9 +223,6 @@ a {
     padding: 0 1rem;
 }
 
-/* .profile_s {
-    width: 100%;
-} */
 
 /* /SIDEBAR */
 
@@ -252,24 +249,30 @@ a {
 
 }
 
+/* TOP MENU */
+
 #top_menu {
     margin-bottom: 1rem;
 }
 
 #top_menu a {
     color: var(--sp-side-txt);
+    text-transform: uppercase;
 }
 
-#top_menu .unstyle_list {
+.categories {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 
     padding: 1rem;
 
     font-size: 12px;
     font-weight: 400;
+
 }
+
+/* /TOP MENU */
 
 #main {
     width: 95%;
