@@ -148,6 +148,47 @@ a {
     height: 100px;
 }
 
+.pla_t {
+    color: white;
+    padding: 1rem 0.5rem;
+}
+
+.pla_btn {
+    border: none;
+
+    width: 35px;
+    margin-left: 0.5rem;
+    aspect-ratio: 1/1;
+
+    background-color: var(--sp-user);
+
+    cursor: pointer;
+}
+
+.create {
+    color: var(--sp-side-txt);
+    padding: 0.5rem;
+    vertical-align: 4px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.play_list {
+    margin: 1rem 0.5rem;
+    height: 250px;
+
+    overflow-y: auto;
+}
+
+.pl_list {
+    color: var(--sp-side-txt);
+    font-size: 12px;
+}
+
+.pl_list li {
+    padding: 0.5rem 0;
+}
+
 .down_desc {
     color: var(--sp-side-txt);
     font-size: 12px;
@@ -340,6 +381,11 @@ a {
         display: block;
         font-size: 15px;
     }
+
+    .pla_t {
+        display: block;
+    }
+    
     
 }
 
@@ -392,6 +438,11 @@ a {
         display: block;
         font-size: 15px;
     }
+
+    .pla_t {
+        display: block;
+    }
+    
     
 }
 
@@ -452,6 +503,10 @@ a {
         display: block;
         font-size: 15px;
     }
+
+    .pla_t {
+        display: block;
+    }
     
 }
 
@@ -508,6 +563,18 @@ a {
     }
 
     .user_desc {
+        display: none;
+    }
+
+    .pla_t {
+        display: none;
+    }
+
+    .playlist_btn {
+        display: none;
+    }
+
+    .play_list {
         display: none;
     }
     
