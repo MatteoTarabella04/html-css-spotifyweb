@@ -53,19 +53,20 @@
 
                 <div class="play_list">
                     <ul class="unstyle_list pl_list">
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        
                     </ul>
                 </div>
 
@@ -118,6 +119,7 @@
                         <div class="card">
                             <div class="album">
                                 <img src="./assets/img/metal_lifting.jpg" alt="">
+                                <i class="fa-regular fa-circle-play fa-3x hover_album"></i>
 
                                 <strong class="title">Heavy Metal</strong>
                                 <span class="sub">Subtitle</span>
@@ -129,6 +131,7 @@
                         <div class="card">
                             <div class="album">
                                 <img src="./assets/img/stranger.jpeg" alt="">
+                                <i class="fa-regular fa-circle-play fa-3x hover_album"></i>
 
                                 <strong class="title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</strong>
                                 <span class="sub">Kyle Dixon & Michael Stein</span>
@@ -139,6 +142,7 @@
                         <div class="card">
                             <div class="album">
                                 <img src="./assets/img/aquietplace.jpeg" alt="">
+                                <i class="fa-regular fa-circle-play fa-3x hover_album"></i>
 
                                 <strong class="title">A quiet place</strong>
                                 <span class="sub">Subtitle</span>
@@ -149,6 +153,7 @@
                         <div class="card">
                             <div class="album">
                                 <img src="./assets/img/split.jpeg" alt="">
+                                <i class="fa-regular fa-circle-play fa-3x hover_album"></i>
 
                                 <strong class="title">Split</strong>
                                 <span class="sub">Subtitle</span>
@@ -159,6 +164,7 @@
                         <div class="card">
                             <div class="album">
                                 <img src="./assets/img/cure.jpeg" alt="">
+                                <i class="fa-regular fa-circle-play fa-3x hover_album"></i>
 
                                 <strong class="title">A cure of wellness</strong>
                                 <span class="sub">Subtitle</span>
@@ -169,6 +175,7 @@
                         <div class="card">
                             <div class="album">
                                 <img src="./assets/img/sinister.jpeg" alt="">
+                                <i class="fa-regular fa-circle-play fa-3x hover_album"></i>
 
                                 <strong class="title">Sinister</strong>
                                 <span class="sub">Subtitle</span>
@@ -252,6 +259,7 @@
                 </button>
                 <button class="player_btn">
                     <i class="fa-regular fa-circle-play fa-2x"></i>
+                    <i class="fa-regular fa-circle-pause fa-2x"></i>
                 </button>
                 <button class="player_btn">
                     <i class="fa-solid fa-forward-step"></i>
@@ -263,7 +271,9 @@
             <div class="duration_bar flex">
                 <span class="time">0:25</span>
                 <div class="bar">
-                    <div class="bar_status"></div>
+                    <div class="bar_status">
+                        <div class="point_status"></div>
+                    </div>
                 </div>
                 <span class="time">4:35</span>
             </div>
@@ -278,9 +288,12 @@
             </button>
             <button class="player_btn">
                 <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-volume-mute"></i>
             </button>
             <div class="bar_vol">
-                <div class="vol_level"></div>
+                <div class="vol_level">
+                    <div class="level_status"></div>
+                </div>
             </div>
         </div>
         <!-- /.foot_right -->
