@@ -733,7 +733,7 @@ footer {
         display: none;
     }
 
-    .side_nav_lg {
+    .side_nav_s {
         width: 100%;
     }
 
@@ -783,6 +783,58 @@ footer {
         flex-direction: column;
     }
     
+}
+
+@media screen and (min-width: 1441px) {
+
+    #main {
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        width: calc(100% - 200px);
+    }
+
+    .logo_s {
+        display: none;
+    }
+
+    .logo_lg {
+        width: 85%;
+    }
+
+    .side_nav_ll {
+        width: 22%;
+    }
+
+    .menu_desc {
+        vertical-align: 12px;
+    }
+
+    .download_lg {
+        width: 10%;
+        margin: 0.5rem;
+    }
+
+    .down_desc {
+        vertical-align: 13px;
+    }
+
+    .user {
+        width: 18%;
+    }
+
+    .user_desc {
+        font-size: 15px;
+    }
+
+
 }
 
 
